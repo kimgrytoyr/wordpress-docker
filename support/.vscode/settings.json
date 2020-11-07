@@ -1,0 +1,8 @@
+{
+    "[php]": {
+        "editor.defaultFormatter": "wongjn.php-sniffer"
+    },
+    "phpSniffer.autoDetect": true,
+    "phpSniffer.executablesFolder": "/var/www/html/vendor/bin/",
+    "phpSniffer.standard": "WordPress",
+}

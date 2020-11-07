@@ -1,0 +1,12 @@
+{
+    "name": "kimgrytoyr/docker-wordpress",
+    "description": "A simple Wordpress Docker project.",
+    "type": "project",
+    "require": {},
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "symplify/coding-standard": "*",
+        "phpcompatibility/php-compatibility": "*",
+        "wp-coding-standards/wpcs": "*"
+    }
+}
