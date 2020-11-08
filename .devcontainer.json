@@ -1,0 +1,8 @@
+{
+    "name": "Wordpress Docker",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "wordpress",
+    "workspaceFolder": "/var/www/html",
+    "shutdownAction": "stopCompose",
+    "extensions": ["bmewburn.vscode-intelephense-client", "wongjn.php-sniffer"]
+  }
