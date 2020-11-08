@@ -14,7 +14,9 @@ This is a simple Wordpress Docker image with the following features:
 The package is meant to be used in Visual Studio Code with the Remote-Containers extension.
 
 ## Features
-- MySQL image and the latest WordPress image – WordPress runs at https://localhost:8000
+- MySQL image
+- The latest WordPress image – WordPress runs at https://localhost:8000
+- phpMyAdmin – runs at http://localhost:8080
 - PHP code linting and formatting adhering to the WordPress Coding Standard.
 - Pre-installed node so that you can use [npx @wordpress/...](https://developer.wordpress.org/block-editor/packages/#using-the-packages-via-npm)
 
