@@ -13,17 +13,19 @@ This is a simple Wordpress Docker image with the following features:
 
 The package is meant to be used in Visual Studio Code with the Remote-Containers extension.
 
+## Features
+- MySQL image and the latest WordPress image – WordPress runs at https://localhost:8000
+- PHP code linting and formatting adhering to the WordPress Coding Standard.
+- Pre-installed node so that you can use [npx @wordpress/...](https://developer.wordpress.org/block-editor/packages/#using-the-packages-via-npm)
+
 ## Usage
-In the root of the project, run the following command:
-```
-docker-compose up -d
-```
+1. Open Visual Studio Code.
+2. Make sure you have the [Visual Studio Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed.
+3. Open the command palette and run the command `Remote-Containers: Open Folder in Container`
+4. Wait for it...
+5. Happy coding!
 
-This will build the Docker image and launch both a database image and the Wordpress image itself.
-
-When this command finishes you can attach to the remote container in VSCode using the Remote-Containers extension. After doing that, install the `wongjn.php-sniffer` extension in the container only.
-
-Thats it! You should now have a working PHP (WordPress) linter and formatter.
+Thats it! You should now have a database server and Wordpress running in separate containers. Linting and formatting adhering to the WordPress Coding Standard should just work.
 
 Visit your WordPress site at `http://localhost:8000`.
 
