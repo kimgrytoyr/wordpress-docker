@@ -4,5 +4,6 @@
     "service": "wordpress",
     "workspaceFolder": "/var/www/html",
     "shutdownAction": "stopCompose",
-    "extensions": ["bmewburn.vscode-intelephense-client", "wongjn.php-sniffer"]
+    "forwardPorts": [9000],
+    "extensions": ["bmewburn.vscode-intelephense-client", "wongjn.php-sniffer", "felixfbecker.php-debug"]
   }
