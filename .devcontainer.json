@@ -4,6 +4,7 @@
     "service": "wordpress",
     "workspaceFolder": "/var/www/html",
     "shutdownAction": "stopCompose",
-    "extensions": ["bmewburn.vscode-intelephense-client", "wongjn.php-sniffer"],
-    "postCreateCommand": "curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp"
+    "postCreateCommand": "curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp",
+    "forwardPorts": [9000],
+    "extensions": ["bmewburn.vscode-intelephense-client", "wongjn.php-sniffer", "felixfbecker.php-debug"]
   }

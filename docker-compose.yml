@@ -28,6 +28,7 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: foobar
       WORDPRESS_DB_NAME: wordpress
+      XDEBUG_CONFIG: remote_host=host.docker.internal remote_port=9000 remote_enable=1
   pma:
     image: phpmyadmin/phpmyadmin
     ports:
