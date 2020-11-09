@@ -30,10 +30,10 @@ The package is meant to be used in Visual Studio Code with the Remote-Containers
 
 Thats it! You should now have a database server and Wordpress running in separate containers. Linting and formatting adhering to the WordPress Coding Standard should just work. You can also run the default debug configuration using Xdebug.
 
-Visit your WordPress site at `http://localhost:8000`.
+Visit your WordPress site at http://localhost:8000.
 
 ## Debugging with Xdebug
-The container has been configured to not run Xdebug when using PHP from the command line. This is to prevent it from being used when PHP-Sniffer is triggered.
+The container has been configured to not run Xdebug when using PHP from the command line. This is to prevent it from being used when PHP-Sniffer is triggered, since it will drastically slow down the linter and the formatter.
 
 Here's how to start a debug session:
 1. Launch the debug configuration `Listen for XDebug`
