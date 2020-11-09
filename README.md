@@ -19,6 +19,7 @@ The package is meant to be used in Visual Studio Code with the Remote-Containers
 - phpMyAdmin – runs at http://localhost:8080
 - PHP code linting and formatting adhering to the WordPress Coding Standard.
 - Pre-installed node so that you can use [npx @wordpress/...](https://developer.wordpress.org/block-editor/packages/#using-the-packages-via-npm)
+- Xdebug automatically configured
 
 ## Usage
 1. Open Visual Studio Code.
@@ -27,7 +28,7 @@ The package is meant to be used in Visual Studio Code with the Remote-Containers
 4. Wait for it...
 5. Happy coding!
 
-Thats it! You should now have a database server and Wordpress running in separate containers. Linting and formatting adhering to the WordPress Coding Standard should just work.
+Thats it! You should now have a database server and Wordpress running in separate containers. Linting and formatting adhering to the WordPress Coding Standard should just work. You can also run the default debug configuration using Xdebug.
 
 Visit your WordPress site at `http://localhost:8000`.
 
