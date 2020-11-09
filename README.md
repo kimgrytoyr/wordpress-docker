@@ -19,7 +19,7 @@ The package is meant to be used in Visual Studio Code with the Remote-Containers
 - phpMyAdmin – runs at http://localhost:8080
 - PHP code linting and formatting adhering to the WordPress Coding Standard.
 - Pre-installed node so that you can use [npx @wordpress/...](https://developer.wordpress.org/block-editor/packages/#using-the-packages-via-npm)
-- Xdebug automatically configured
+- Xdebug automatically configured and ready to use. See below for Xdebug instructions.
 
 ## Usage
 1. Open Visual Studio Code.
@@ -31,6 +31,16 @@ The package is meant to be used in Visual Studio Code with the Remote-Containers
 Thats it! You should now have a database server and Wordpress running in separate containers. Linting and formatting adhering to the WordPress Coding Standard should just work. You can also run the default debug configuration using Xdebug.
 
 Visit your WordPress site at `http://localhost:8000`.
+
+## Debugging with Xdebug
+The container has been configured to not run Xdebug when using PHP from the command line. This is to prevent it from being used when PHP-Sniffer is triggered.
+
+Here's how to start a debug session:
+1. Launch the debug configuration `Listen for XDebug`
+2. In the «Ports» pane in «Remote Explorer», enable forwarding of port `9000` (click the refresh arrow to make it appear)
+3. Enable breakpoints and have fun!
+
+> **Note:** When you stop the debugging session, make sure to disable forwarding of port `9000`, or else the page will appear to hang.
 
 ## Adding plugins and themes
 If you're developing a plugin or a theme and you have that project locally on your computer, just add them as volumes in the `docker-compose.yml` file below the `wp_root` volume, like this:
