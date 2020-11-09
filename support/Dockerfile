@@ -25,3 +25,4 @@ RUN pecl install -f xdebug \
     && echo "xdebug.remote_autostart=false" >> /usr/local/etc/php/xdebug/xdebug.ini \
     && echo "xdebug.remote_enable=0" >> /usr/local/etc/php/php-cli.ini \
     && echo "export PHP_INI_SCAN_DIR=/usr/local/etc/php/conf.d:/usr/local/etc/php/xdebug" >> /etc/apache2/envvars
+RUN echo "alias wp='wp --allow-root'" >> /root/.bashrc
