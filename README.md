@@ -15,6 +15,7 @@ This repository is meant to be opened by Visual Studio Code using the [Visual St
 - PHP code linting and formatting adhering to the WordPress Coding Standard.
 - Pre-installed node so that you can use [npx @wordpress/...](https://developer.wordpress.org/block-editor/packages/#using-the-packages-via-npm)
 - Xdebug automatically configured and ready to use. See below for Xdebug instructions.
+- [WP-CLI](https://wp-cli.org/) is pre-installed so that you can manage the WordPress site from the command line.
 
 ## Usage
 1. Open Visual Studio Code.
