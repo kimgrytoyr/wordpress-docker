@@ -6,12 +6,7 @@
 
 ---
 
-This is a simple Wordpress Docker image with the following features:
-
-- phpcs and the Wordpress Coding Standard is automatically installed
-- Visual Studio Code project settings enable the use of phpcs by default
-
-The package is meant to be used in Visual Studio Code with the Remote-Containers extension.
+This repository is meant to be opened by Visual Studio Code using the [Visual Studio Code Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension and it requires Docker to work.
 
 ## Features
 - MySQL image
@@ -23,7 +18,7 @@ The package is meant to be used in Visual Studio Code with the Remote-Containers
 
 ## Usage
 1. Open Visual Studio Code.
-2. Make sure you have the [Visual Studio Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed.
+2. Make sure you have the [Visual Studio Code Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed.
 3. Open the command palette and run the command `Remote-Containers: Open Folder in Container`
 4. Wait for it...
 5. Happy coding!
